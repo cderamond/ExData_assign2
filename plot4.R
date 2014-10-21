@@ -7,7 +7,7 @@ data <- inner_join(select(scc[grep("coal", scc$SCC.Level.Three, ignore.case = TR
                   pm25)
 #define median per year
 med <- as.tbl(data) %>%
-        group_by(year, yearf) %>%
+        group_by(yearf, year) %>%
         summarise(medEm = median(Emissions), medLogEm = median(logEm))
 
 #data <- subset(data, !is.na(data))
