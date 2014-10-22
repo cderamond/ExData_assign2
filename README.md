@@ -5,8 +5,8 @@ Coursera EDA assignment 2
 *course: exdata-007*
 
 ## What do we have here?
-* ![](getData.R) : loading of RDS data files, minor tweaks.
-* !(plot1.R), !(plot2.R), !(plot3.R), !(plot4.R), !(plot5.R), !(plot6.R) : graph for each plot.
+* [getData.R] : loading of RDS data files, minor tweaks.
+* `(plot1.R), (plot2.R), (plot3.R), (plot4.R), (plot5.R), (plot6.R)` : graph for each plot.
 
 ## Questions
 

@@ -18,3 +18,10 @@ data <- inner_join(select(scc[grep("Mobile Sources", scc$SCC.Level.One, ignore.c
 g <- qplot(yearf, logEm, data = data, 
            geom = "boxplot", 
            col = city)
+g <- g + labs(x = "Year",
+         y = expression("log " * PM[2.5]),
+         colour = "Vehicle Emission by city")
+
+png("plot6.png", width = 720, height = 540)
+print(g)
+dev.off()
